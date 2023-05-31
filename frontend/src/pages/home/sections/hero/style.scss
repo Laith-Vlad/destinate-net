@@ -1,0 +1,150 @@
+
+
+.hero-section {
+  position: relative;
+  height: 100vh;
+  overflow: hidden;
+  background-image: url(../../../../assets/images/heroBG2.jpg);
+  background-size: cover;
+  background-blend-mode: multiply;
+  background-attachment: fixed;
+
+  .home {
+    padding-top: 10rem;
+    text-align: center;
+    gap: 2rem;
+    flex-direction: column;
+
+    .mainText {
+      h1 {
+        font-weight: bold;
+        font-size: 40px;
+        font-family: 'Berkshire Swash', cursive;
+        letter-spacing: 2px;
+      }
+    }
+
+    .homeText {
+      color: black;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 2.5rem;
+    }
+
+    .homeImages {
+      width: 100%;
+      margin: 1rem auto 0;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      border-radius: 5rem;
+
+      .videoDiv {
+        width: 45%;
+
+        .video {
+          border-radius: 16rem;
+        }
+      }
+
+      .plane {
+        position: absolute;
+        width: 50%;
+        top: -15%;
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    .home {
+      padding-top: 6rem;
+
+      .mainText {
+        h1 {
+          font-size: 32px;
+        }
+      }
+
+      .homeText {
+        font-size: 18px;
+        line-height: 2rem;
+      }
+
+      .homeImages {
+        .videoDiv {
+          width: 70%;
+        }
+
+        .plane {
+          width: 80%;
+          top: -10%;
+        }
+      }
+    }
+  }
+}
+
+
+
+
+  .hero-section__container {
+    background-image: var(--gradient-background);
+    position: absolute;
+    top: 50%;
+    left: 10%;
+    transform: translateY(-50%);
+    padding: 3rem;
+    width: 300px;
+    box-shadow: 0 20px 10px rgba(0, 0, 0, 0.5);
+    z-index: 5;
+    border-radius: 30px;
+    background-attachment: fixed;
+    backdrop-filter: blur(10px);
+    color: var(--white-color);
+    -webkit-backdrop-filter: blur(10px);
+    width: 30%;
+
+    h1 {
+      font-size: 30px;
+      font-weight: 700;
+      padding: 20px;
+      span{
+        color: var(--red-color);
+        font-family: Lobster;
+        font-weight: bold;
+        text-shadow: 0 1px 20px #ffffff;
+      }
+    }
+
+    p {
+      padding: 10px;
+    }
+
+    button {
+      border-radius: 10px;
+
+    }
+
+    // Responsive Styles
+    @media screen and (max-width: 1117px) {
+      width: 50%;
+      left: 10%;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 90%;
+      left: 5%;
+    }
+
+    @media screen and (max-width: 480px) {
+      
+      
+      width: 90%;
+      
+      padding: 1rem;
+
+      h1 {
+        font-size: 24px;
+      }
+    }
+  }
